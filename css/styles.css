@@ -635,3 +635,8 @@ img {
   visibility: hidden;
   pointer-events: none;
 }
+.data-form {
+  width: 528px;
+  margin: 0 auto;
+display: block;
+}

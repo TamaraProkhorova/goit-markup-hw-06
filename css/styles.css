@@ -469,6 +469,7 @@ img {
   display: flex;
   justify-content: center;
   gap: 10px;
+  margin-right: 93px;
 }
 .footer-soc-link {
   width: 44px;
@@ -487,6 +488,23 @@ img {
 .footer-soc-link:hover,
 .footer-soc-link:focus {
   background-color: var(--accent-color);
+}
+.footer-input {
+  display: flex;
+  align-items: center;
+}
+.footer-label {
+  margin-right: 12px;
+}
+.footer-btn {
+font-family: inherit;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.88;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
 }
 
 /* ------Portfolio------ */
@@ -637,6 +655,23 @@ img {
 }
 .data-form {
   width: 528px;
+  height: 581px;
+  display: block;
   margin: 0 auto;
-display: block;
+padding: 40px 39px 40px 41px;
+}
+.data-title {
+font-weight: 700;
+font-size: 20px;
+line-height: 1.15;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--text-color-two);
+margin-bottom: 12px;
+}
+.form-field {
+  outline: 1px solid red;
+  /* display: flex;
+  flex-direction: column; */
+  margin-bottom: 20px;
 }

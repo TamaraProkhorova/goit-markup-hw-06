@@ -480,29 +480,49 @@
             </li>
           </ul>
         </div>
+        <div class="footer-subscribe">
+          <p class="join">Підпишіться на розсилку</p>
+          <div class="footer-input">
+            <label class="footer-label">
+              <input type="email" name="email" placeholder="E-mail"/>
+            </label>
+            <button class="footer-btn" type="button">Підписатися<svg class="footer-send" width="24" height="24">
+              <use href="./images/symbol-defs.svg#icon-icon-send"></use>
+            </svg></button>
+          </div>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal-window">
-        <form name="data-form">
-          <p>Залиште свої дані, ми вам перездвонимо</p>
-          <div class="form-feald">
-            <label>
-              <input type="username" name="name"/>Ім'я
-            </label>
-            <label>
-              Телефон
-              <input type="tel" name="tel"/>
-            </label>
-            <label>
-              Пошта
-              <input type="email" name="email"/>
-              <label>
-              <label>Коментар<textarea name="comment" placeholder="Введіть текст"></textarea></label>
-              <input type="checkbox" name="email"/>
-              Погоджуюся з розсилкою та приймаю <span>Умови договору</span>
+        <form class="data-form">
+          <p class="data-title">Залиште свої дані, ми вам перездвонимо</p>
+          <div class="form-field">
+            <label class="form-label">Ім'я
+              <input type="text" name="name" class="form-input"/>
             </label>
           </div>
+            <div class="form-field">
+              <label>
+                Телефон
+                <input type="tel" name="tel"/>
+              </label>
+            </div>
+            <div class="form-field">
+              <label>
+                Пошта
+                <input type="email" name="email"/>
+              </label>
+            </div>
+              <div class="form-field">
+                <label>Коментар<textarea name="comment" placeholder="Введіть текст">
+                </textarea></label>
+              </div>
+              <div class="form-field">
+                <label>
+                Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a>
+              </label>
+              </div>
           <button type="submit">Відправити</button>
         </form>
         <button class="button-close" type="button" data-modal-close>

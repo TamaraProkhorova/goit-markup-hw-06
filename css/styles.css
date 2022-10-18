@@ -513,9 +513,6 @@ padding-left: 16px;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.footer-input::placeholder none {
-  color: rgba(255, 255, 255, 0.6);
-}
 .footer-btn {
   font-weight: 700;
   display: flex;
@@ -668,7 +665,7 @@ padding-left: 16px;
   border-radius: 50%;
   display: flex;
   align-items: center;
-  background: #ffffff;
+  background: var(--primary-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
@@ -713,9 +710,13 @@ color: var(--text-color-three);
   border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
 }
+.form-input::placeholder {
+  padding-left: 42px;
+}
 .form-icon {
   position: absolute;
   left: 0;
+  transform: translateX(52px) translateY(11px);
 }
 .label-agree {
   font-size: 14px;
@@ -727,22 +728,24 @@ color: var(--text-color-three);
 margin-bottom: 30px;
 }
 .comment {
-  width: 448px;
+  width: 100%;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
+resize: none;
 }
 .comment::placeholder {
   font-size: 12px;
 line-height: 1.67;
 letter-spacing: 0.01em;
 color: rgba(117, 117, 117, 0.5);
+padding-left: 16px;
 }
 .form-btn {
   font-weight: 700;
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
   letter-spacing: 0.06em;
   width: 200px;
   height: 50px;

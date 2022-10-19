@@ -646,6 +646,7 @@ padding-left: 16px;
   left: 50%;
   width: 528px;
   min-height: 581px;
+  padding: 40px;
   background: var(--primary-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -675,11 +676,9 @@ padding-left: 16px;
   pointer-events: none;
 }
 .data-form {
-  width: 528px;
-  height: 581px;
-  display: block;
-  margin: 0 auto;
-padding: 40px 39px 40px 41px;
+  display:flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .data-title {
 font-weight: 700;
@@ -689,13 +688,6 @@ text-align: center;
 letter-spacing: 0.03em;
 color: var(--text-color-two);
 margin-bottom: 12px;
-}
-.form-field {
-  /* position: relative; */
-  outline: 1px solid red;
-  /* display: flex;
-  flex-direction: column; */
-  margin-bottom: 10px;
 }
 .form-label {
 font-size: 12px;
@@ -709,6 +701,11 @@ color: var(--text-color-three);
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
+padding-left: 42px;
+}
+.form-input:focus,
+.comment:focus {
+border: 1px solid var(--accent-color);
 }
 .form-input::placeholder {
   padding-left: 42px;
@@ -717,15 +714,20 @@ border-radius: 4px;
   position: absolute;
   left: 0;
   transform: translateX(52px) translateY(11px);
+  fill: var(--text-color-two);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-icon:focus{
+  fill: var(--accent-color);
 }
 .label-agree {
   font-size: 14px;
 line-height: 1.17;
 letter-spacing: 0.03em;
 color: var(--text-color-three);
-}
-.form-field-agree {
 margin-bottom: 30px;
+display: block;
+text-align: center;
 }
 .comment {
   width: 100%;
@@ -733,19 +735,16 @@ margin-bottom: 30px;
   border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
 resize: none;
+padding: 12px 16px;
 }
 .comment::placeholder {
   font-size: 12px;
 line-height: 1.67;
 letter-spacing: 0.01em;
 color: rgba(117, 117, 117, 0.5);
-padding-left: 16px;
 }
 .form-btn {
   font-weight: 700;
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
   letter-spacing: 0.06em;
   width: 200px;
   height: 50px;
@@ -754,4 +753,15 @@ padding-left: 16px;
   border-color: transparent;
   color: var(--text-color-one);
   background-color: var(--accent-color);
+  margin: 0 auto;
+}
+.check-icon {
+border: 2px solid var(--text-color-two);
+}
+.agreement {
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: var(--accent-color);
+text-decoration-line: underline;
 }

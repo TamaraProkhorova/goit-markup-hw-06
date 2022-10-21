@@ -527,11 +527,16 @@
               <div class="form-field">
                 <label class="form-label">Коментар<textarea class="comment" name="comment" placeholder="Введіть текст"></textarea></label>
               </div>
-                <label class="label-agree"><input class="check-agree visually-hidden" type="checkbox" name="check" ><svg class="check-icon checked" width="16" height="15">
+              <div class="form-field">
+                <input type="checkbox" class="check-agree visually-hidden" name="check" id="check">
+                <label for="check" class="label-agree">
+                  <span>
+                    <svg class="check-icon" width="16" height="15">
                   <use href="./images/symbol-defs.svg#icon-icon-check"></use>
-                </svg>
-                Погоджуюся з розсилкою та приймаю <a href="#" class="agreement link">Умови договору</a>
+                    </svg></span>
+                Погоджуюся з розсилкою та приймаю<a href="#" class="agreement link">Умови договору</a>
               </label>
+            </div>
           <button class="form-btn" type="submit">Відправити</button>
         </form>
       </div>

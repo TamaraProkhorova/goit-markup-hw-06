@@ -726,15 +726,6 @@ border: 1px solid var(--accent-color);
 .form-field input:focus + .form-icon {
   fill: var(--accent-color);
 }
-.label-agree {
-  font-size: 14px;
-line-height: 1.17;
-letter-spacing: 0.03em;
-color: var(--text-color-three);
-margin-bottom: 30px;
-display: block;
-text-align: center;
-}
 .comment {
   width: 100%;
   height: 120px;
@@ -750,6 +741,40 @@ line-height: 1.67;
 letter-spacing: 0.01em;
 color: rgba(117, 117, 117, 0.5);
 }
+.label-agree {
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--text-color-three);
+  margin-bottom: 30px;
+  display: flex;
+align-items: center;
+}
+.label-agree span{
+  width: 16px; 
+  height: 15px;
+  border: 2px solid var(--text-color-two);
+  border-radius: 2px;
+  margin-right: 7px;
+  margin-left: 10px;
+  display: flex;
+align-items: center;
+}
+.agreement {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+  text-decoration: underline;
+  margin-left: 7px;
+}
+.check-agree:checked + .label-agree span{
+  background-color: var(--accent-color);
+  border: transparent;
+}
+.check-agree:focus + .label-agree span{
+  border-color: var(--accent-color);
+}
 .form-btn {
   font-weight: 700;
   letter-spacing: 0.06em;
@@ -761,17 +786,4 @@ color: rgba(117, 117, 117, 0.5);
   color: var(--text-color-one);
   background-color: var(--accent-color);
   margin: 0 auto;
-}
-.check-icon {
-border: 2px solid var(--text-color-two);
-}
-.agreement {
-font-size: 14px;
-line-height: 1.71;
-letter-spacing: 0.03em;
-color: var(--accent-color);
-text-decoration: underline;
-}
-.label-agree:checked + .check-icon{
-color: var(--accent-color);
 }
